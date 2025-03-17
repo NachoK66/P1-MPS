@@ -1,5 +1,7 @@
 package clubdeportivo;
 
+/* Errores corregidos por Ignacio Morillas Rosell */
+
 public class Grupo {
 	private String codigo;
 	private String actividad;

@@ -1,5 +1,6 @@
 package clubdeportivo;
 
+/* Errores corregidos por Ignacio Morillas Rosell */
 
 public class ClubDeportivoAltoRendimiento extends ClubDeportivo{
 	private int maximoPersonasGrupo;
