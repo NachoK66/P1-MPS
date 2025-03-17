@@ -41,6 +41,9 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
           cache: maven
+
+      - name: Prueba Maven clean
+        run: mvn clean install
   
       - name: Run tests with JaCoCo
         run: mvn test
