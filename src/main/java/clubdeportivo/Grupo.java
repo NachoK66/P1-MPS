@@ -9,15 +9,18 @@ public class Grupo {
 	private int nmatriculados;
 	private double tarifa;
 	
-	public Grupo(String codigo, String actividad, int nplazas,  int matriculados, double tarifa) throws ClubException {
+	public Grupo(String codigo, String actividad, int nplazas, int matriculados, double tarifa) throws ClubException {
 		if (nplazas<=0 || matriculados<0 || tarifa <=0) {
 			throw new ClubException("ERROR: los datos numéricos no pueden ser menores o iguales que 0.");
+		}
+		if (actividad==null || actividad.trim().isEmpty()) {		// ADDME: añadida comprobación de nombre de actividad nulo o vacío
+			throw new ClubException("ERROR: la actividad no puede ser nula.");
 		}
 		if (matriculados>nplazas) {
 			throw new ClubException("ERROR: El número de plazas es menor que el de matriculados.");
 		}
 		this.codigo=codigo;
-		this.actividad=actividad;
+		this.actividad=actividad.trim();		// ADDME: añadido trim para eliminar espacios en blanco al principio y al final
 		this.nplazas=nplazas;
 		this.nmatriculados=matriculados;
 		this.tarifa=tarifa;
