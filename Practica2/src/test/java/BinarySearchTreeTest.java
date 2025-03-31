@@ -1,3 +1,5 @@
+/* Realizado por Ignacio Morillas Rosell */
+
 import com.uma.tree.BinarySearchTree;
 import com.uma.tree.BinarySearchTreeException;
 
@@ -7,6 +9,43 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.ArrayList;
 import java.util.List;
+
+/* TESTS
+ * 
+ * 1. Constructor con comparador nulo
+ * 2. Constructor con comparador correcto
+ * 
+ * 3. Render del árbol
+ * 
+ * 4. Insertar un valor correcto
+ * 5. Insertar un valor nulo
+ * 6. Insertar un valor ya existente
+ * 
+ * 7. Preguntar si es hoja
+ * 
+ * 8. Preguntar si contiene un valor existente
+ * 9. Preguntar si contiene un valor no existente
+ * 10. Preguntar si contiene un valor nulo
+ * 
+ * 11. Obtener el valor del nodo mínimo
+ * 12. Obtener el valor del nodo máximo
+ * 
+ * 13. Borrar una rama existente
+ * 14. Borrar una rama no existente
+ * 15. Borrar un valor nulo
+ * 16. Borrar un valor existente hoja
+ * 17. Borrar un valor existente con un hijo
+ * 18. Borrar un valor existente con dos hijos
+ * 19. Borrar un valor no existente
+ * 
+ * 20. Preguntar por el tamaño
+ * 21. Preguntar por la profundidad
+ * 
+ * 22. Obtener una lista con los elementos del árbol en orden
+ * 
+ * 23. Balancear el árbol
+ * 
+ */
 
 @DisplayName("Árbol binario de búsqueda")
 class BinarySearchTreeTest {
